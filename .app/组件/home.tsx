@@ -119,9 +119,10 @@ function _Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>ChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            有key的可以在设置里面使用自己的key
+			没有的可以购买 加V：loher88
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
@@ -157,7 +158,7 @@ function _Home() {
               />
             </div>
             <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank">
+              <a href="https://51gp.net" target="_blank">
                 <IconButton icon={<GithubIcon />} shadow />
               </a>
             </div>
@@ -189,7 +190,6 @@ function _Home() {
             key="chat"
             showSideBar={() => setShowSideBar(true)}
             sideBarShowing={showSideBar}
-            autoSize={{ minRows: 2, maxRows: 6 }}
           />
         )}
       </div>
